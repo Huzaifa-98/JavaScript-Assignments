@@ -77,17 +77,12 @@
             <tr class="bg-white border-b dark:bg-white-200 text-gray-900 dark:border-gray-700">
             <td class="px-6 py-3 text-center">${movie.id}</td>
             <td class="px-6 py-3 flex"> 
-                <div></div>
-                <div class="flex flex-row">
-                    <div class="w-1/2"><img class="px-2 inline-block" src="${'https://image.tmdb.org/t/p/w45' + movie.poster_path}" /></div>
+                <div class="d-flex flex-row">
+                    <div class="w-1/2"><img class="px-3 d-inline-block" src="${'https://image.tmdb.org/t/p/w45' + movie.poster_path}" /></div>
                     <div class="w-1/2">
-                    <h1>${movie.title}</h1>
-                    <p><button class="bg-gray-100 border-black-500 border-2 text-blackfont-bold text-center p-[1px] mr-2 rounded">${movie.certification}</button> ${movie.genres.toString(" , ")} • ${hr}h ${min}m</p>
+                        <h6 class="text-primary">${movie.title}</h6>
+                        <p><button class="btn-cert">${movie.certification}</button> ${movie.genres.toString(" , ")} • ${hr}h ${min}m</p>
                     </div>
-                </div>
-                <div>
-                    <div class="font-semibold text-xl text-blue-500 pb-2"></div>
-                    
                 </div>
             </td>
             <td class="px-6 py-3">${year}</td>
